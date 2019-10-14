@@ -39,7 +39,7 @@ a {
     left: 0;
     position: absolute;
     color: white;
-    font-family: "Product Sans Regular";
+    font-family: "Product Sans Regular", sans-serif;
     letter-spacing: 0.1em;
     font-size: 2vh;
     line-height: 1.8em;
@@ -47,7 +47,8 @@ a {
 }
 
 .loading-title {
-    font-family: "Product Sans Bold";
+    font-family: "Product Sans Bold", sans-serif;
+    font-weight: bold;
     letter-spacing: 0.1em;
     font-size: 2em;
     line-height: 1.2em;
@@ -72,7 +73,7 @@ a {
     color: rgba(255, 255, 255, 0.3);
     font-size: 8pt;
     letter-spacing: 0.1em;
-    font-family: "Product Sans Regular";
+    font-family: "Product Sans Regular", sans-serif;
 }
 
 .sketcher-container {
@@ -146,7 +147,8 @@ a {
 .name-container {
     display: flex;
     justify-content: space-between;
-    font-family: "Product Sans Bold", "FZ Youhei", Sans-serif;
+    font-weight: bold;
+    font-family: "Product Sans Bold", Sans-serif;
 }
 
 .media-button-container {
