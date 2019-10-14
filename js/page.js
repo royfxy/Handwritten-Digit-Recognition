@@ -25,8 +25,6 @@ $(document).ready(function() {
             window.open(num_video[predict_num], "_blank");
         }
     })
-
-
 });
 
 const canvas = document.getElementById("mySketcher")
