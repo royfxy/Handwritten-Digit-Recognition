@@ -1,0 +1,98 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The HTML5 Herald</title>
+
+    <link rel="stylesheet" href="css/normalize.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+    <div class="content-container">
+        <div class="sketcher-container">
+            <canvas class="sketcher" id="mySketcher"></canvas>
+            <button class="refresh-button" disabled>
+                <i class="refresh"></i>
+            </button>
+        </div>
+        <div class="description">
+            <div class="name-container">
+                <span></span>
+                <span id="number-zh-simp">空</span>
+                <span>|</span>
+                <span id="number-zh-trad">空</span>
+                <span>|</span>
+                <span id="number-digit">Ø</span>
+                <span>|</span>
+                <span id="number-en">Null</span>
+                <span></span>
+            </div>
+            <div class="media-button-container">
+                <button class="media-button" id="audio-button" disabled>
+                    <div class="media-button-icon" id="audio-button-icon" disabled/>
+                </button>
+                <button class="media-button" id="video-button" disabled>
+                    <div class="media-button-icon" id="video-button-icon" disabled/>
+                </button>
+            </div>
+
+            <table class="predictions-container" border="0" cellspacing="0" cellpadding="0">
+                <tbody valign="middle">
+                    <tr>
+                        <td class="pred-result-prob">0.0%</td>
+                        <td class="pred-result-prob">0.0%</td>
+                    </tr>
+                    <tr>
+                        <td class="pred-result-prob">0.0%</td>
+                        <td class="pred-result-prob">0.0%</td>
+                    </tr>
+                    <tr>
+                        <td class="pred-result-prob">0.0%</td>
+                        <td class="pred-result-prob">0.0%</td>
+                    </tr>
+                    <tr>
+                        <td class="pred-result-prob">0.0%</td>
+                        <td class="pred-result-prob">0.0%</td>
+                    </tr>
+                    <tr>
+                        <td class="pred-result-prob">0.0%</td>
+                        <td class="pred-result-prob">0.0%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="copyright-info">
+            <div>
+                Cpoyright © 2019 <a href="https://fxy.one">FXY.ONE</a>
+            </div>
+        </div>
+        <div class="loading-page">
+            <div class="loading-content">
+                <div>
+                    Loading...<br> Cpoyright © 2019 <a href="https://fxy.one">FXY.ONE</a>
+                </div>
+                <div class="loading-title">
+                    Handwritten Digit Recognition
+                </div>
+            </div>
+        </div>
+    </div>
+    <canvas id="sketcher-image" style="display: none;" />
+    <audio id="num-audio" src="" style="display: none;"></audio>
+</body>
+
+<script src="js/atrament.min.js"></script>
+<script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js"></script>
+<script src="https://cdn.staticfile.org/tensorflow/1.2.10/tf.min.js"></script>
+<script src="js/normalize_image.js"></script>
+<script src="js/mnist.js"></script>
+<script src="js/page.js"></script>
+
+</html>
