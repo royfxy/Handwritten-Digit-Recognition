@@ -1,4 +1,5 @@
 $(document).ready(function() {
+    $(".loading-page").css("display", "block");
     adjust_size()
     $(window).resize(function() {
         adjust_size()
