@@ -8,4 +8,5 @@ async function loadModel() {
 loadModel().then(e => {
     model = e;
     sketcher.clear()
+    $(".loading-page").css("display", "none");
 });

@@ -26,7 +26,7 @@ $(document).ready(function() {
         }
     })
 
-    $(".loading-page").css("display", "none");
+
 });
 
 const canvas = document.getElementById("mySketcher")
